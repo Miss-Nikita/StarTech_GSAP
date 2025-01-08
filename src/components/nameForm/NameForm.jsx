@@ -5,7 +5,9 @@ const NameForm = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-props.setusername(userInput)    
+    props.setusername(userInput);
+
+    localStorage.setItem("user",userInput)
   };
 
   return (
@@ -28,8 +30,10 @@ props.setusername(userInput)
                   WELCOME TO THE GALACTIC PORT, CAPTAIN
                 </h3>
                 <input
-                value={userInput}
-                onChange={(e)=>{setuserInput(e.target.value)}}
+                  value={userInput}
+                  onChange={(e) => {
+                    setuserInput(e.target.value);
+                  }}
                   className="px-5 outline-none bg-transparent text-white placeholder:text-white border-[1px] mt-5 pb-4 text-center text-5xl w-4/6"
                   type="text"
                   placeholder="Enter your name"
