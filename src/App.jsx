@@ -4,7 +4,7 @@ import Homepage from "./components/homepage/Homepage";
 import NameForm from "./components/nameForm/NameForm";
 
 const App = () => {
-  localStorage.clear();
+  // localStorage.clear();
   const [username, setusername] = useState("");
 
   if (localStorage.length == 0) {

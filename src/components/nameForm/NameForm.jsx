@@ -11,8 +11,16 @@ const NameForm = (props) => {
   };
 
   return (
-    <div className="relative">
-      <div className="h-screen w-full   flex justify-center items-center p-40 ">
+    <div className="relative h-screen w-screen bg-[#F4F9FB]  ">
+        <div className="fixed h-full bg-[#C6D9E1]  w-full rounded-3xl">
+        <img
+          className="h-full w-full object-cover pb-3"
+          src="https://cdn.prod.website-files.com/65ef0d86eff3b9ba6b18aef9/6601b7d63c31da7e5be13f14_Frame%201815%20copy-min%20(1).webp"
+          alt=""
+        />
+      </div>
+
+      <div className="h-screen w-full    flex justify-center items-center p-40 ">
         <div className="relative  h-[20vw] -translate-y-8 w-[46vw] ">
           <img
             className="absolute w-full"
@@ -41,7 +49,7 @@ const NameForm = (props) => {
               </div>
 
               <div className="absolute -bottom-12 -right-20">
-                <button className="uppercase px-8 py-3 hover:text-white hover:bg-[#0B6376] rounded-lg   bg-white font-medium">
+                <button className=" uppercase px-8 py-3 hover:text-white hover:bg-[#0B6376] rounded-lg   bg-white font-medium">
                   START THE JOURNEY
                 </button>
               </div>
