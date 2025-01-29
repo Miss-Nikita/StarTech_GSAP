@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import LandindPage from "./LandindPage";
 import Page2 from "./Page2";
 import Page3 from "./Page3";
+import Page4 from "./Page4";
 
 const Homepage = () => {
 
@@ -19,6 +20,7 @@ const Homepage = () => {
 <LandindPage/>
 <Page2/>
 <Page3/>
+<Page4/>
     
     </div>
   );
